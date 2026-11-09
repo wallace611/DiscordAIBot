@@ -1,0 +1,17 @@
+# Discord bot framework
+discord.py>=2.4
+
+# Main model client (OpenAI / Azure OpenAI / Ollama via OpenAI-compatible endpoint)
+openai>=1.0
+
+# Summary model client (Ollama native API: think=False, per-call num_ctx)
+ollama>=0.5
+
+# Async SQLite access
+aiosqlite>=0.20
+
+# Configuration loading from .env
+python-dotenv>=1.0
+
+# IANA time zone data for zoneinfo (Windows has no system tz database)
+tzdata ; sys_platform == "win32"
